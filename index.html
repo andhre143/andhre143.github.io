@@ -9,11 +9,11 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
+            background: linear-gradient(135deg, #ff9a9e, #fad0c4);
             color: #333;
         }
         header {
-            background-color: #333;
+            background: linear-gradient(135deg, #ff6a00, #ee0979);
             color: #fff;
             padding: 20px;
             text-align: center;
@@ -23,7 +23,7 @@
             font-size: 36px;
         }
         nav {
-            background-color: #444;
+            background: #222;
             padding: 10px;
             text-align: center;
         }
@@ -33,44 +33,59 @@
             text-decoration: none;
             font-size: 18px;
             margin: 0 10px;
+            transition: background 0.3s, transform 0.2s;
+            border-radius: 5px;
         }
         nav a:hover {
-            background-color: #575757;
+            background: #ff6a00;
+            transform: scale(1.1);
         }
         .container {
             padding: 20px;
+            text-align: center;
         }
         section {
             margin-bottom: 40px;
+            padding: 20px;
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
         }
         h2 {
-            color: #333;
-        }
-        .about-me, .projects {
-            display: flex;
-            justify-content: space-around;
-            flex-wrap: wrap;
+            color: #ff6a00;
         }
         .about-me img {
             border-radius: 50%;
             width: 150px;
             height: 150px;
+            border: 4px solid #ff6a00;
+        }
+        .projects {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
         }
         .project {
-            background-color: #fff;
-            border: 1px solid #ddd;
+            background: linear-gradient(135deg, #ff758c, #ff7eb3);
+            border: none;
             padding: 20px;
-            margin: 10px;
-            width: 30%;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin: 15px;
+            width: 300px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s;
+        }
+        .project:hover {
+            transform: scale(1.05);
         }
         .project img {
             width: 100%;
             height: auto;
+            border-radius: 10px;
         }
         footer {
             text-align: center;
-            background-color: #333;
+            background: #222;
             color: white;
             padding: 10px;
         }
@@ -92,7 +107,7 @@
             <h2>About Me</h2>
             <div class="about-me">
                 <img src="your-photo.jpg" alt="Your Photo">
-                <p>Hi, I'm [Your Name], a passionate web developer and designer. I love creating beautiful and functional websites and apps. With experience in HTML, CSS, JavaScript, and more, I work on both the front-end and back-end of projects.</p>
+                <p>Hi, I'm [Your Name], a passionate web developer and designer. I love creating beautiful and functional websites and apps.</p>
             </div>
         </section>
 
@@ -102,24 +117,24 @@
                 <div class="project">
                     <img src="project1.jpg" alt="Project 1">
                     <h3>Project 1</h3>
-                    <p>A brief description of your first project. What was it about? What technologies did you use?</p>
+                    <p>Brief description of your first project.</p>
                 </div>
                 <div class="project">
                     <img src="project2.jpg" alt="Project 2">
                     <h3>Project 2</h3>
-                    <p>A brief description of your second project. Explain what the project did and any challenges faced.</p>
+                    <p>Brief description of your second project.</p>
                 </div>
                 <div class="project">
                     <img src="project3.jpg" alt="Project 3">
                     <h3>Project 3</h3>
-                    <p>A brief description of your third project. Talk about your role and the outcome.</p>
+                    <p>Brief description of your third project.</p>
                 </div>
             </div>
         </section>
 
         <section id="contact">
             <h2>Contact Me</h2>
-            <p>If you'd like to work together or have any questions, feel free to reach out to me!</p>
+            <p>If you'd like to work together, feel free to reach out!</p>
             <p>Email: your.email@example.com</p>
         </section>
     </div>
@@ -129,4 +144,3 @@
     </footer>
 </body>
 </html>
-
